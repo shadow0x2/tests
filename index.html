@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Tables</title>
+        <style>
+            tr:nth-child(odd) {
+                background-color: red;
+            }
+            tr:nth-child(even) {
+                background-color: #2bdfe7;
+            }
+            tr:nth-child(3) {
+                background-color: #7fff50;
+            }
+
+            td,
+            th {
+                border: 1px solid black;
+                padding: 10px;
+                background-color:;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Table #1</h2>
+
+        <table>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+                <td>Target</td>
+            </tr>
+            <tr>
+                <td>Item 4</td>
+                <td>Item 5</td>
+                <td>Item 6</td>
+            </tr>
+            <tr>
+                <td>Item 7</td>
+                <td>Item 8</td>
+                <td>Item 9</td>
+            </tr>
+        </table>
+
+        <h2>Table #2</h2>
+
+        <table>
+            <tr style="background-color: aquamarine">
+                <td colspan="3">Header</td>
+            </tr>
+
+            <tr>
+                <td style="background-color: cyan" rowspan="3" colspan="2">Sidebar</td>
+                <td style="background-color: red" rowspan="2" colspan="2">Target</td>
+            </tr>
+
+            <tr></tr>
+
+            <tr>
+                <td style="background-color: mediumpurple" colspan="2">Footer</td>
+            </tr>
+        </table>
+    </body>
+</html>
